@@ -1,0 +1,23 @@
+.btn__rg {
+  width: 172px;
+  height: 55px;
+  border: none;
+}
+
+.btn__rg--shadow {
+  filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.19));
+}
+
+.btn__rg--large {
+  width: 190px;
+  height: 60px;
+  border: none;
+}
+
+.btn__rg--purple {
+  background-color: #ac5fd0;
+}
+
+.btn__rg--orange {
+  background-color: #ff7218;
+}
