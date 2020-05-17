@@ -5,17 +5,19 @@ import './HeroContainer.css';
 import Logo from '../components/Logo/Logo';
 import Hero from '../components/Hero/Hero';
 
+
+
 const HeroContainer = props => {
   return (
-    <div class="container container--hero">
+    <div className="container container--hero">
       
       {/* <Logo/> */}
-      <div class="row">
+      <div className="row">
         <Logo/>
       </div>
 
       {/* Hero */}
-      <div class="row">
+      <div className="row">
         <Hero/>
       </div>
     </div>

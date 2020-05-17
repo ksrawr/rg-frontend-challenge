@@ -2,8 +2,8 @@ import React from 'react';
 
 const Logo = props => {
   return (
-    <div class="logo">
-      <a class="logo__title">Rooster Grin</a>
+    <div className="logo">
+      <a className="logo__title">Rooster Grin</a>
     </div>
   )
 }
