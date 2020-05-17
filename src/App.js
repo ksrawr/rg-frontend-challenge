@@ -5,7 +5,7 @@ class App extends React.Component {
     return(
       <>
       <h1>I am App Component</h1>
-      <button className="primary">Hi There</button>
+      <button type="button" className="btn btn-primary">Hi There</button>
       </>
     );
   }
