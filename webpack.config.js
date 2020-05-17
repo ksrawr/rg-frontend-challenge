@@ -35,9 +35,6 @@ module.exports = {
             loader: 'css-loader'
           },
           {
-            loader: 'sass-loader'
-          },
-          {
             loader: 'postcss-loader',
             options: {
               plugins: function() {
@@ -47,6 +44,9 @@ module.exports = {
                 ]
               }
             }
+          },
+          {
+            loader: 'sass-loader'
           }
         ]
       },
@@ -69,9 +69,6 @@ module.exports = {
       }
     ]
   },
-  // externals: {
-  //   "jquery": 'jQuery'
-  // },
   plugins: [
     new HTMLWebPackPlugin({
       template: path.resolve(__dirname, 'public/index.html'),
