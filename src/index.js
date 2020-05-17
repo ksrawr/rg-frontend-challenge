@@ -6,6 +6,9 @@ import App from "./App";
 import 'bootstrap';
 import './scss/app.scss';
 
+// load google fonts
+import './scss/font.scss';
+
 import './css/style.css';
 
 ReactDOM.render(<App/>, document.getElementById('root'));
