@@ -5,7 +5,7 @@ const Hero = props => {
     <div className="hero">
       <p className="hero__greeting">WELCOME TO</p>
       <p className="hero__title">Rooster Grin</p>
-      <button className="btn btn-primary hero__btn">BUTTON BUTTON</button>
+      <button className="btn__rg btn__rg--shadow btn__rg--purple hero__btn"><span className="btn__rg__text">BUTTON BUTTON</span></button>
     </div>
   )
 }

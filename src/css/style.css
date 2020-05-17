@@ -23,6 +23,10 @@
 
 .container--hero .hero {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__greeting {
@@ -48,4 +52,14 @@
   font-family: "Open Sans";
   font-weight: 700;
   text-align: center;
+}
+
+.hero .btn__rg__text {
+  width: 145px;
+  height: 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 700;
 }
