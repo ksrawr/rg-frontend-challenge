@@ -7,9 +7,8 @@ class App extends React.Component {
   render() {
     return(
       <>
-      <main>
         <HeroContainer/>
-      </main>
+
       </>
     );
   }
