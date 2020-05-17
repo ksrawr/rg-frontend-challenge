@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 1 Chrome versions",
+            "last 1 Firefox versions",
+            "last 1 Safari versions",
+            "last 1 iOS versions"
+          ]
+        }
+      }
+    ],
+      "@babel/preset-react"
+  ],
+  "plugins": [ "@babel/plugin-proposal-class-properties" ]
+}
