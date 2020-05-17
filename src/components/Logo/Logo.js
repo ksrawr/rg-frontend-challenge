@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = props => {
   return (
     <div className="logo">
-      <a className="logo__title">Rooster Grin</a>
+      <a href="#" className="logo__title"></a>
     </div>
   )
 }
