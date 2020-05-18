@@ -9,7 +9,7 @@ class App extends React.Component {
     return(
       <>
         <HeroContainer/>
-        <MissionContainer/>
+        {/* <MissionContainer/> */}
       </>
     );
   }

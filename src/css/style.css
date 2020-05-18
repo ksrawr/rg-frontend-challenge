@@ -9,6 +9,8 @@
   min-height: 90vh;
   background: url('./../images/hero.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +48,7 @@
   font-weight: 800;
   text-align: center;
   /* border: 2px solid #ffffff; */
-  -webkit-text-stroke: 2px #ffffff;
+  -webkit-text-stroke: 3px #ffffff;
 }
 
 .hero__title {
@@ -74,9 +76,12 @@
 .container__mission {
   min-width: 100vw;
   min-height: 60vh;
+}
+
+.row__mission {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .mc__title {

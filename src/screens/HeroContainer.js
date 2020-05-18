@@ -9,16 +9,18 @@ import Hero from '../components/Hero/Hero';
 
 const HeroContainer = props => {
   return (
-    <div className="container container--hero">
-      
-      {/* <Logo/> */}
-      <div className="row">
-        <Logo/>
-      </div>
+    <div>
+      <div className="container-fluid container--hero">
+        
+        {/* <Logo/> */}
+        <div className="row">
+          <Logo/>
+        </div>
 
-      {/* Hero */}
-      <div className="row">
-        <Hero/>
+        {/* Hero */}
+        <div className="row">
+          <Hero/>
+        </div>
       </div>
     </div>
   )
