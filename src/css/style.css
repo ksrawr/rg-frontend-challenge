@@ -5,7 +5,6 @@
 }
 
 .container--hero {
-  min-width: 100vw;
   min-height: 90vh;
   background: url('./../images/hero.jpg');
   background-size: cover;
@@ -74,17 +73,16 @@
 }
 
 .mission__section {
-  min-width: 100vw;
   min-height: 70vh;
 }
 
 .row__mission {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: center;
 }
 
-.mc__title {
+.title {
   font-size: 40px;
   letter-spacing: 1px;
   line-height: 48px;
@@ -92,19 +90,21 @@
   font-weight: 700;
 }
 
-.mc__title--purple {
+.title--purple {
   color: #613476;
 }
 
 .mc__description {
-  display: block;
+  display: -webkit-box;
   max-width: 390px;
-  max-height: 160px;
+  height: inherit;
   font-size: 16px;
   color: #161616;
   font-family: "Open Sans";
   font-weight: 400;
   -webkit-text-stroke: 0.6px #979797;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
 .mc__link {
@@ -124,6 +124,14 @@ img {
   max-width: 100%;
 }
 
+
+.gettingstarted__section {
+  min-height: 60vh;
+  background: url('./../images/banner-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media screen and (max-width: 600px) {
   .hero__greeting {
