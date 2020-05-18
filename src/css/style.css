@@ -19,8 +19,8 @@
 
 .container--hero .logo {
   position: absolute;
-  top: 50px;
-  left: 100px;
+  top: 5%;
+  left: 10%;
 }
 
 .logo__title {
@@ -71,6 +71,16 @@
   color: #ffffff;
   font-family: "Open Sans";
   font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .hero__greeting {
+    font-size: 52px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .container__mission {
