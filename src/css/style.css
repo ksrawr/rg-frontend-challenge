@@ -143,6 +143,92 @@ img {
   align-items: center;
 }
 
+.row__offer {
+  min-height: 80vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.offer__description {
+  display: -webkit-box;
+  width: 408px;
+  height: 96px;
+  font-size: 16px;
+  color: #161616;
+  font-family: "Open Sans";
+  font-weight: 400;
+  -webkit-text-stroke-color: 1px solid #979797;
+  -webkit-box-orient: vertical;
+}
+
+.offer__link {
+  display: block;
+  max-width: 190px;
+  height: 43px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 42px;
+  color: #613476;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  white-space: pre;
+}
+
+.offer__icon--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__icon {
+  width: 81px;
+  height: 81px;
+}
+
+.offer__icon--clipboard {
+  background: url('./../images/home-expertise.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offer__icon--facemask {
+  background: url('./../images/home-hygiene.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offer__icon--lab {
+  background: url('./../images/home-lab.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offer__icon--calendar {
+  background: url('./../images/home-retention.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offer__icon--border {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #ac5fd0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__icon__text {
+  font-size: 22px;
+  line-height: 30px;
+  color: #3e3e3e;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 600px) {
   .hero__greeting {
     font-size: 52px;
