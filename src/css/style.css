@@ -72,12 +72,8 @@
   font-weight: 700;
 }
 
-.mission__section {
-  min-height: 70vh;
-}
-
 .row__mission {
-  /* display: flex; */
+  min-height: 70vh;
   flex-direction: row;
   align-items: center;
 }
@@ -96,8 +92,8 @@
 
 .mc__description {
   display: -webkit-box;
-  max-width: 390px;
-  height: inherit;
+  min-width: 390px;
+  height: auto;
   font-size: 16px;
   color: #161616;
   font-family: "Open Sans";
@@ -133,7 +129,7 @@ img {
   background-position: center;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .hero__greeting {
     font-size: 52px;
   }
@@ -141,11 +137,23 @@ img {
   .hero__title {
     font-size: 44px;
   }
+}
 
-  .mission__content {
+@media only screen and (max-width: 992px) {
+  .mission__content, .mission__message {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .mc__description {
+    max-width: 392px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 30px;
   }
 }
