@@ -10,12 +10,12 @@ const MissionContainer = props => {
       <div className="row row__mission">
 
         {/* Mission Content */}
-        <div className="col-lg-3 offset-lg-3 col-md-12 offset-md-3 col-sm-12 col-xs-12 mission__content ml-auto">
+        <div className="col-lg-3 offset-lg-2 col-md-12 col-sm-12 col-xs-12 mission__content">
           <MissionContent/>
         </div>
 
         {/* Mission Image */}
-        <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 ml-auto mt-2 mission__message">
+        <div className="col-lg-6 offset-lg-1 col-md-12 col-sm-12 col-xs-12 mt-2 mission__message">
           <img src="./../images/img-1.jpg" className="img-fluid"></img>
         </div>
 
