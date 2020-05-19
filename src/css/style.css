@@ -471,6 +471,11 @@ img {
   .mc__description {
     max-width: 392px;
   }
+
+  .review__subject {
+    text-align: center
+  }
+
 }
 
 @media (max-width: 1200px) {

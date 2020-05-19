@@ -74,7 +74,7 @@ class ReviewContainer extends React.Component {
               />
             </div>
   
-            <div className="col-lg-6 offset-lg-1 col-md-12 col-sm-12 col-xs-12 mt-2 review__carousel col--centervertical">
+            <div className="col-lg-6 offset-lg-1 col-md-10 offset-md-2 col-sm-12 col-xs-12 mt-2 review__carousel col--centervertical">
               <ReviewCarousel
                 next={this.next}
                 prev={this.prev}
