@@ -309,10 +309,8 @@ img {
   position: relative;
 }
 
-.carousel__btn {
-  width: 10px;
-  height: 21px;
-  color: #613476;
+.carousel__btn:hover {
+  cursor: pointer;
 }
 
 .carousel__index-btns {
@@ -322,9 +320,9 @@ img {
 
 .carousel__index {
   display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   background-color: #ffe465;
   margin: 8px;
 }

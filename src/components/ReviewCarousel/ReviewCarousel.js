@@ -17,21 +17,21 @@ const ReviewCarousel = props => {
 
         <div className="row">
           <div className="col-lg-1 col--centervertical">
-            &#10094;
+            <a className="carousel__btn" style={{color: "#613476"}} onClick={props.prev}>&#10094;</a>
           </div>
           <div className="col-lg-6">
             <p className="review__description">{description}</p>
           </div>
           <div className="col-lg-1 col--centervertical">
-            &#10095;
+            <a className="carousel__btn" style={{color: "#613476"}} onClick={props.next}>&#10095;</a>
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-8 carousel__index-btns">
-            <div className="carousel__index"></div>
+            <div className="carousel__index carousel__btn" onClick={props.prev}></div>
             <div className="carousel__index carousel__index--active"></div>
-            <div className="carousel__index"></div>
+            <div className="carousel__index carousel__btn" onClick={props.next}></div>
           </div>
         </div>
 

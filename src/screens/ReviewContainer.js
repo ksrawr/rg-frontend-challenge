@@ -22,26 +22,34 @@ class ReviewContainer extends React.Component {
         date: "08/09/2019",
         description: "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula. Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in.",
         rating: 4
+      },
+      {
+        subject: "LOREM IPSUM John Doe 3",
+        reviewer: "John Doe 3",
+        date: "08/09/2019",
+        description: "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula. Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in.",
+        rating: 4
       }
     ],
     currentIndex: 0
   };
 
   next = () => {
-    let nextIndex = this.state.currentIndex === this.state.reviews.length - 1 ? this.state.currentIndex : this.currentIndex + 1;
+    let nextIndex = this.state.currentIndex === this.state.reviews.length - 1 ? this.state.currentIndex : this.state.currentIndex + 1;
 
     this.setState({ currentIndex: nextIndex });
   };
 
   prev = () => {
-    let prevIndex = this.state.currentIndex - 1 < 0 ? 0 : this.state.currentIndex + 1;
+    let prevIndex = this.state.currentIndex - 1 < 0 ? 0 : this.state.currentIndex - 1;
 
     this.setState({ currentIndex: prevIndex });
   }
 
   render() {
-
+    console.log('[ReviewContainer] render', this.state);
     const {reviews, currentIndex} = this.state;
+    console.log(reviews, currentIndex);
 
     return (
       <div className="section__review">
