@@ -1,5 +1,4 @@
 import React from 'react';
-import './HeroContainer.css';
 
 // Load Components
 import Logo from '../components/Logo/Logo';
@@ -10,7 +9,7 @@ import Hero from '../components/Hero/Hero';
 const HeroContainer = () => {
   return (
     <div>
-      <div className="container-fluid container--hero">
+      <div className="container-fluid container__hero">
         
         {/* <Logo/> */}
         <div className="row">

@@ -1,3 +1,15 @@
+//----------Custom CSS sheet to override bootstrap---------
+
+// center vertically children of boostrap col class 
+.col--centervertical {
+  align-self: center;
+}
+
+// center horizontally children of boostrap row class 
+.row--centerhorizontal {
+  justify-content: center;
+}
+
 .btn__rg {
   width: 172px;
   height: 55px;
@@ -20,4 +32,16 @@
 
 .btn__rg--orange {
   background-color: #ff7218;
+}
+
+.title {
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.title--purple {
+  color: #613476;
 }

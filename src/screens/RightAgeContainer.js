@@ -2,7 +2,7 @@ import React from 'react';
 
 const RightAgeContainer = () => {
   return (
-    <div className="section__rightage row__rightage">
+    <div className="section__rightage">
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-3 offset-lg-7 col-md-4 offset-md-7 col-sm-6 offset-sm-6 col-6 offset-6">

@@ -5,7 +5,7 @@ const ReviewCarousel = props => {
   const { reviewer, date, description } = props.review; 
 
   return(
-    <div className="row carousel__container"> 
+    <div className="row"> 
       
       <div className="col-lg-12">
 

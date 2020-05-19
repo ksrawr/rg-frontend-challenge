@@ -1,18 +1,12 @@
+/*------- CSS RESET -----*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.col--centervertical {
-  align-self: center;
-}
-
-.row--centerhorizontal {
-  justify-content: center;
-}
-
-.container--hero {
+/* ------------------Hero Container----------------- */
+.container__hero {
   min-height: 90vh;
   background: url('./../images/hero.jpg');
   background-size: cover;
@@ -24,7 +18,15 @@
   align-items: center;
 }
 
-.container--hero .logo {
+.container__hero .hero {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__hero .logo {
   position: absolute;
   top: 5%;
   left: 10%;
@@ -35,14 +37,6 @@
   width: 249px;
   height: 45px;
   background: url('./../images/logo-white.svg');
-}
-
-.container--hero .hero {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__title {
@@ -60,7 +54,6 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   text-align: center;
-  /* border: 2px solid #ffffff; */
   -webkit-text-stroke: 3px #ffffff;
 }
 
@@ -85,22 +78,11 @@
   font-weight: 700;
 }
 
+/* ------------------MissionContainer----------------- */
 .row__mission {
   min-height: 70vh;
   flex-direction: row;
   align-items: center;
-}
-
-.title {
-  font-size: 40px;
-  letter-spacing: 1px;
-  line-height: 48px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-.title--purple {
-  color: #613476;
 }
 
 .mc__description {
@@ -120,15 +102,18 @@
   font-weight: 700;
 }
 
-img {
-  max-width: 100%;
-}
-
+/* ------------------GettingStartedContainer----------------- */
 .gettingstarted__section {
   background: url('./../images/banner-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.row__gettingstarted {
+  min-height: 80vh;
+  flex-direction: row;
+  align-items: center;
 }
 
 .gettingstarted__section .btn__rg--text {
@@ -141,12 +126,7 @@ img {
   font-weight: 700;
 }
 
-.row__gettingstarted {
-  min-height: 80vh;
-  flex-direction: row;
-  align-items: center;
-}
-
+/* ------------------OfferContainer----------------- */
 .row__offer {
   min-height: 80vh;
   flex-direction: row;
@@ -250,22 +230,18 @@ img {
   margin-top: 10px;
 }
 
+/* ------------------RightAgeContainer----------------- */
 .section__rightage {
   background: url('./../images/banner-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.row__rightage {
   display: flex;
   min-height: 75vh;
   align-items: center;
 }
 
 .rightage__description {
-  /* width: 352px;
-  height: 93px; */
   font-size: 16px;
   color: #161616;
   font-family: "Open Sans", sans-serif;
@@ -274,7 +250,7 @@ img {
   margin-bottom: 30px;
 }
 
-.row__rightage .btn__rg--text {
+.section__rightage .btn__rg--text {
   width: 153px;
   height: 22px;
   font-size: 16px;
@@ -284,7 +260,7 @@ img {
   font-weight: 600;
 }
 
-/* ReviewContainer CSS */
+/* ------------------ReviewContainer----------------- */
 .row__review {
   min-height: 50vh;
 }
@@ -320,10 +296,6 @@ img {
   color: #ff7218;
 }
 
-.carousel__container {
-  position: relative;
-}
-
 .carousel__btn:hover {
   cursor: pointer;
 }
@@ -346,13 +318,7 @@ img {
   background-color: #ffc718;
 }
 
-.fade {
-  -webkit-animation-name: fade;
-  animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-}
-
+/* ------------------FooterContainer----------------- */
 .row__footer {
   min-height: 15vh;
 }
@@ -367,6 +333,14 @@ img {
 .social__icon {
   width: 43px;
   height: 43px;
+}
+
+/* ------------------Animations----------------- */
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fadein {
@@ -429,6 +403,7 @@ img {
   }
 }
 
+/* ------------------MediaQueries----------------- */
 @media only screen and (max-width: 600px) {
   .hero__greeting, .hero__name {
     font-size: 52px;
@@ -458,9 +433,4 @@ img {
   .offer__title, .review__subject {
     text-align: center;
   }
-
-}
-
-@media (max-width: 1200px) {
-
 }
