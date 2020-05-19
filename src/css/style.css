@@ -405,6 +405,7 @@
 
 /* ------------------MediaQueries----------------- */
 @media only screen and (max-width: 600px) {
+
   .hero__greeting, .hero__name {
     font-size: 52px;
   }
@@ -418,12 +419,22 @@
   }
 }
 
+@media only screen and (max-width: 770px) {
+  .row__mission {
+    margin-top: 50px;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .mission__content, .mission__message, .offer__content, .review__heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .row__offer, .row__review {
+    margin-top: 50px;
   }
 
   .col--offset-2 {
