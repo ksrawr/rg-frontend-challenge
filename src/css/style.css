@@ -358,8 +358,7 @@ img {
 }
 
 .row__footer {
-  min-height: 20vh;
-  background-color: #ededed;
+  min-height: 15vh;
 }
 
 .social__text {
