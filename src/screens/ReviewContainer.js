@@ -7,6 +7,7 @@ import ReviewCarousel from './../components/ReviewCarousel/ReviewCarousel';
 class ReviewContainer extends React.Component {
   
   state = {
+    // FAKE DATA
     // For carousel demonstration purposes only
     reviews: [
       {
@@ -31,25 +32,34 @@ class ReviewContainer extends React.Component {
         rating: 4
       }
     ],
-    currentIndex: 0
+    currentIndex: 0,
+    fade: false
   };
 
   next = () => {
     let nextIndex = this.state.currentIndex === this.state.reviews.length - 1 ? this.state.currentIndex : this.state.currentIndex + 1;
 
-    this.setState({ currentIndex: nextIndex });
+    this.setState({
+      currentIndex: nextIndex,
+      fade: (nextIndex !== this.state.currentIndex) 
+    });
   };
 
   prev = () => {
     let prevIndex = this.state.currentIndex - 1 < 0 ? 0 : this.state.currentIndex - 1;
 
-    this.setState({ currentIndex: prevIndex });
+    this.setState({
+      currentIndex: prevIndex,
+      fade: (prevIndex !== this.state.currentIndex)
+    });
+  }
+
+  endAnimation = () => {
+    this.setState({ fade: false });
   }
 
   render() {
-    console.log('[ReviewContainer] render', this.state);
-    const {reviews, currentIndex} = this.state;
-    console.log(reviews, currentIndex);
+    const {reviews, currentIndex, fade} = this.state;
 
     return (
       <div className="section__review">
@@ -59,6 +69,8 @@ class ReviewContainer extends React.Component {
             <div className="col-lg-3 offset-lg-2 col-md-12 col-sm-12 col-xs-12 review__heading col--centervertical">
               <ReviewHeading
                 review={reviews[currentIndex]}
+                endAnimation={this.endAnimation}
+                fade={fade}
               />
             </div>
   
@@ -67,6 +79,8 @@ class ReviewContainer extends React.Component {
                 next={this.next}
                 prev={this.prev}
                 review={reviews[currentIndex]}
+                endAnimation={this.endAnimation}
+                fade={fade}
               />
             </div>
   

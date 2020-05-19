@@ -11,7 +11,7 @@ const ReviewCarousel = props => {
 
         <div className="row">
           <div className="col-lg-8 text-center">
-            <h4 className="review__signature">{reviewer} {date}</h4>
+            <h4 className={`review__signature ${props.fade ? 'fade' : ''}`} onAnimationEnd={props.endAnimation}>{reviewer} {date}</h4>
           </div>
         </div>
 
@@ -20,7 +20,9 @@ const ReviewCarousel = props => {
             <a className="carousel__btn" style={{color: "#613476"}} onClick={props.prev}>&#10094;</a>
           </div>
           <div className="col-lg-6">
-            <p className="review__description">{description}</p>
+            <p className={`review__description ${props.fade ? 'fade' : ''}`} onAnimationEnd={props.endAnimation}>
+              {description}
+            </p>
           </div>
           <div className="col-lg-1 col--centervertical">
             <a className="carousel__btn" style={{color: "#613476"}} onClick={props.next}>&#10095;</a>
@@ -36,10 +38,6 @@ const ReviewCarousel = props => {
         </div>
 
       </div>
-
-      
-
-
 
     </div>
   )

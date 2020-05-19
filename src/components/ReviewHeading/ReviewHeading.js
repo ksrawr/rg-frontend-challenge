@@ -7,9 +7,9 @@ const ReviewHeading = props => {
   return (
     <>
       {/* Review Subject */}
-      <h3 className="review__subject">{subject}</h3>
+      <h3 className={`review__subject ${props.fade ? 'fade' : ''}`} onAnimationEnd={props.endAnimation}>{subject}</h3>
       {/* Review Rating */}
-      <span className="review__star">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span className={`review__star ${props.fade ? 'fade' : ''}`} onAnimationEnd={props.endAnimation}>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
     </>
   )
 }
