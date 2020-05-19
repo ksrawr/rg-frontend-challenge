@@ -449,7 +449,7 @@ img {
 }
 
 @media only screen and (max-width: 992px) {
-  .mission__content, .mission__message, .offer__content {
+  .mission__content, .mission__message, .offer__content, .review__heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
