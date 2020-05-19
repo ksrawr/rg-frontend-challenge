@@ -11,20 +11,18 @@ const ReviewCarousel = props => {
 
         <div className="row">
           <div className="col-lg-8 text-center">
-          <div className="review__signature">
-            <h4>{reviewer} {date}</h4>
-          </div>
+            <h4 className="review__signature">{reviewer} {date}</h4>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-lg-1">
+          <div className="col-lg-1 col--centervertical">
             &#10094;
           </div>
           <div className="col-lg-6">
-            <p>{description}</p>
+            <p className="review__description">{description}</p>
           </div>
-          <div className="col-lg-1">
+          <div className="col-lg-1 col--centervertical">
             &#10095;
           </div>
         </div>

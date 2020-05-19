@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.col--centervertical {
+  align-self: center;
+}
+
 .container--hero {
   min-height: 90vh;
   background: url('./../images/hero.jpg');
@@ -155,7 +159,7 @@ img {
   height: 96px;
   font-size: 16px;
   color: #161616;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   -webkit-text-stroke-color: 1px solid #979797;
   -webkit-box-orient: vertical;
@@ -225,7 +229,7 @@ img {
   font-size: 22px;
   line-height: 30px;
   color: #3e3e3e;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -247,7 +251,7 @@ img {
   height: 93px;
   font-size: 16px;
   color: #161616;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   -webkit-text-stroke-color: 1px solid #979797;
   margin-bottom: 30px;
@@ -259,14 +263,46 @@ img {
   font-size: 16px;
   letter-spacing: 1px;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
 
+/* ReviewContainer CSS */
+.row__review {
+  min-height: 50vh;
+}
+
+.review__signature {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 42px;
+  color: #613476;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.review__description {
+  /* width: 456px;
+  height: 185px; */
+  font-size: 16px;
+  color: #161616;
+  font-family: "Open Sans";
+  font-weight: 400;
+  -webkit-text-stroke: 1px solid #979797;
+}
+
+.review__subject {
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  color: #3e3e3e;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
 .review__star {
-  width: 27px;
-  height: 26px;
-  background-color: #ff7218;
+  font-size: 40px;
+  color: #ff7218;
 }
 
 .carousel__container {
@@ -290,7 +326,7 @@ img {
   height: 8px;
   border-radius: 4px;
   background-color: #ffe465;
-  margin: 5px;
+  margin: 8px;
 }
 
 .carousel__index--active {

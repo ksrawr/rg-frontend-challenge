@@ -7,13 +7,21 @@ import ReviewCarousel from './../components/ReviewCarousel/ReviewCarousel';
 class ReviewContainer extends React.Component {
   
   state = {
+    // For carousel demonstration purposes only
     reviews: [
       {
-        subject: "Lorem Ipsum",
+        subject: "LOREM IPSUM DOLOR SIT AMET",
         reviewer: "John Doe",
         date: "08/08/2019",
-        description: "Lorem ipsum lorem ipsum",
+        description: "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula. Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in.",
         rating: 5
+      },
+      {
+        subject: "LOREM IPSUM DOLOR SIT AMET",
+        reviewer: "John Doe 2",
+        date: "08/09/2019",
+        description: "Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula. Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in odio vel, sit lobortis erat. Fugit quam, ut pede ut ante, in viverra eros dictum nisl ligula.Lorem ipsum dolor sit amet, et felis integer. Cras ac, duis nisl magna est sociis, neque in.",
+        rating: 4
       }
     ],
     currentIndex: 0
@@ -40,11 +48,13 @@ class ReviewContainer extends React.Component {
         <div className="container-fluid">
           <div className="row row__review">
   
-            <div className="col-lg-3 offset-lg-2 col-md-12 col-sm-12 col-xs-12 review__heading">
-              <ReviewHeading/>
+            <div className="col-lg-3 offset-lg-2 col-md-12 col-sm-12 col-xs-12 review__heading col--centervertical">
+              <ReviewHeading
+                review={reviews[currentIndex]}
+              />
             </div>
   
-            <div className="col-lg-6 offset-lg-1 col-md-12 col-sm-12 col-xs-12 mt-2 review__carousel">
+            <div className="col-lg-6 offset-lg-1 col-md-12 col-sm-12 col-xs-12 mt-2 review__carousel col--centervertical">
               <ReviewCarousel
                 next={this.next}
                 prev={this.prev}
