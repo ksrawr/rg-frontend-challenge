@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo = props => {
+const Logo = () => {
   return (
     <div className="logo">
       <a href="#" className="logo__title"></a>

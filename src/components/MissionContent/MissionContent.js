@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MissionContent = props => {
+const MissionContent = () => {
   return (
     <>
     <h3 className="title title--purple mb-4">LOREM IPSUM</h3>

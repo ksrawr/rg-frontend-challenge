@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OfferGrid = props => {
+const OfferGrid = () => {
   return(
     <div className="row row-cols-2">
       <div className="col offer__icon--center offer__icon--animate mb-5">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OfferContent = props => {
+const OfferContent = () => {
   return(
     <>
     <h3 className="title title--purple mb-4">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = props => {
+const Hero = () => {
   return (
     <div className="hero col-md-12 col-sm-12 col-xs-12">
       <p className="hero__greeting">WELCOME TO</p>
