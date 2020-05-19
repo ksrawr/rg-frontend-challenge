@@ -7,6 +7,7 @@ import GettingStartedContainer from './screens/GettingStartedContainer';
 import OfferContainer from './screens/OfferContainer';
 import RightAgeContainer from './screens/RightAgeContainer';
 import ReviewContainer from './screens/ReviewContainer';
+import FooterContainer from './screens/FooterContainer';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <OfferContainer/>
         <RightAgeContainer/>
         <ReviewContainer/>
+        <FooterContainer/>
       </>
     );
   }

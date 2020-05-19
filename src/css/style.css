@@ -8,6 +8,10 @@
   align-self: center;
 }
 
+.row--centerhorizontal {
+  justify-content: center;
+}
+
 .container--hero {
   min-height: 90vh;
   background: url('./../images/hero.jpg');
@@ -334,6 +338,23 @@ img {
   animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+}
+
+.row__footer {
+  min-height: 20vh;
+  background-color: #ededed;
+}
+
+.social__text {
+  font-size: 14px;
+  color: #3e3e3e;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.social__icon {
+  width: 43px;
+  height: 43px;
 }
 
 @-webkit-keyframes fade {
