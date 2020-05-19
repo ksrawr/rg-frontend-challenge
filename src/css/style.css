@@ -104,29 +104,20 @@
 }
 
 .mc__description {
-  display: -webkit-box;
-  min-width: 390px;
-  height: auto;
   font-size: 16px;
   color: #161616;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   -webkit-text-stroke: 0.6px #979797;
-  -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;
 }
 
 .mc__link {
-  display: block;
-  max-width: 190px;
-  height: 43px;
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 42px;
   color: #613476;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  white-space: pre;
 }
 
 img {
@@ -439,12 +430,8 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero__greeting {
+  .hero__greeting, .hero__name {
     font-size: 52px;
-  }
-
-  .hero__title {
-    font-size: 44px;
   }
 
   .offer__title, .review__subject {
@@ -468,10 +455,6 @@ img {
     margin-left: 16.67%;
   }
 
-  .mc__description {
-    max-width: 392px;
-  }
-
   .offer__title, .review__subject {
     text-align: center;
   }
@@ -479,7 +462,5 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .title {
-    font-size: 30px;
-  }
+
 }
