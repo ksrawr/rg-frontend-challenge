@@ -447,7 +447,7 @@ img {
     font-size: 44px;
   }
 
-  .review__subject {
+  .offer__title, .review__subject {
     text-align: center;
   }
 
@@ -472,8 +472,8 @@ img {
     max-width: 392px;
   }
 
-  .review__subject {
-    text-align: center
+  .offer__title, .review__subject {
+    text-align: center;
   }
 
 }

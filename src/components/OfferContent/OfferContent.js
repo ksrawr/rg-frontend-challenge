@@ -3,7 +3,7 @@ import React from 'react';
 const OfferContent = () => {
   return(
     <>
-    <h3 className="title title--purple mb-4">
+    <h3 className="title title--purple mb-4 offer__title">
       LOREM IPSUM DOLOR SIT AMET
     </h3>
     <p className="offer__description">
