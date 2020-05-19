@@ -62,7 +62,7 @@
   text-align: center;
 }
 
-.hero .btn__rg__text {
+.hero .btn__rg--text {
   width: 145px;
   height: 20px;
   font-size: 15px;
@@ -227,6 +227,40 @@ img {
   color: #3e3e3e;
   font-family: "Open Sans";
   font-weight: 700;
+}
+
+.section__rightage {
+  background: url('./../images/banner-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row__rightage {
+  display: flex;
+  min-height: 75vh;
+  align-items: center;
+}
+
+.rightage__description {
+  width: 352px;
+  height: 93px;
+  font-size: 16px;
+  color: #161616;
+  font-family: "Open Sans";
+  font-weight: 400;
+  -webkit-text-stroke-color: 1px solid #979797;
+  margin-bottom: 30px;
+}
+
+.row__rightage .btn__rg--text {
+  width: 153px;
+  height: 22px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {

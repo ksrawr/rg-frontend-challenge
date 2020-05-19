@@ -5,6 +5,7 @@ import HeroContainer from './screens/HeroContainer';
 import MissionContainer from './screens/MissionContainer';
 import GettingStartedContainer from './screens/GettingStartedContainer';
 import OfferContainer from './screens/OfferContainer';
+import RightAgeContainer from './screens/RightAgeContainer';
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <MissionContainer/>
         <GettingStartedContainer/>
         <OfferContainer/>
+        <RightAgeContainer/>
       </>
     );
   }
