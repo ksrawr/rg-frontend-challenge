@@ -7,7 +7,7 @@ import Hero from '../components/Hero/Hero';
 
 
 
-const HeroContainer = props => {
+const HeroContainer = () => {
   return (
     <div>
       <div className="container-fluid container--hero">

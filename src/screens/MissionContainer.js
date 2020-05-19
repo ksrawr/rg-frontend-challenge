@@ -3,7 +3,7 @@ import React from 'react';
 
 import MissionContent from './../components/MissionContent/MissionContent';
 
-const MissionContainer = props => {
+const MissionContainer = () => {
   return (
     <div className="mission__section">
     <div className="container-fluid">

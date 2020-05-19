@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RightAgeContainer = props => {
+const RightAgeContainer = () => {
   return (
     <div className="section__rightage">
       <div className="container-fluid">

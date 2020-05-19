@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GettingStartedContainer = props => {
+const GettingStartedContainer = () => {
   return (
     <div className="gettingstarted__section">
       <div className="container-fluid">

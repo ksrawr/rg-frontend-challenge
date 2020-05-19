@@ -3,7 +3,7 @@ import React from 'react';
 import OfferContent from './../components/OfferContent/OfferContent';
 import OfferGrid from './../components/OfferGrid/OfferGrid';
 
-const OfferContainer = props => {
+const OfferContainer = () => {
   return (
     <div className="offer__section">
       <div className="container-fluid">
