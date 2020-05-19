@@ -273,8 +273,8 @@ img {
 }
 
 .rightage__description {
-  width: 352px;
-  height: 93px;
+  /* width: 352px;
+  height: 93px; */
   font-size: 16px;
   color: #161616;
   font-family: "Open Sans", sans-serif;
@@ -445,6 +445,14 @@ img {
 
   .hero__title {
     font-size: 44px;
+  }
+
+  .review__subject {
+    text-align: center;
+  }
+
+  .col--offset-2 {
+    margin: 0;
   }
 }
 
