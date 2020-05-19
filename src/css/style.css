@@ -263,6 +263,40 @@ img {
   font-weight: 600;
 }
 
+.review__star {
+  width: 27px;
+  height: 26px;
+  background-color: #ff7218;
+}
+
+.carousel__container {
+  position: relative;
+}
+
+.carousel__btn {
+  width: 10px;
+  height: 21px;
+  color: #613476;
+}
+
+.carousel__index-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__index {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ffe465;
+  margin: 5px;
+}
+
+.carousel__index--active {
+  background-color: #ffc718;
+}
+
 @media only screen and (max-width: 600px) {
   .hero__greeting {
     font-size: 52px;
