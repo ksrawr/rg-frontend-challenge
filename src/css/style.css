@@ -194,6 +194,22 @@ img {
   height: 81px;
 }
 
+.offer__icon--animate {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transform-origin: bottom;
+}
+
+.offer__icon--animate:hover {
+  cursor: pointer;
+  animation-name: bounce;
+}
+
+.offer__icon--center:hover .offer__icon__text {
+  border-bottom: 1px solid black;
+}
+
 .offer__icon--clipboard {
   background: url('./../images/home-expertise.svg');
   background-size: cover;
@@ -235,6 +251,7 @@ img {
   color: #3e3e3e;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 .section__rightage {
@@ -355,6 +372,18 @@ img {
 .social__icon {
   width: 43px;
   height: 43px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1,1) translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes fade {
