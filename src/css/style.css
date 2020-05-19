@@ -456,6 +456,10 @@ img {
     align-items: center;
   }
 
+  .col--offset-2 {
+    margin-left: 16.67%;
+  }
+
   .mc__description {
     max-width: 392px;
   }

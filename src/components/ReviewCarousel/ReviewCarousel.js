@@ -16,15 +16,15 @@ const ReviewCarousel = props => {
         </div>
 
         <div className="row">
-          <div className="col-lg-1 col--centervertical">
+          <div className="col-sm-1 col--centervertical col--offset-2">
             <a className="carousel__btn" style={{color: "#613476"}} onClick={props.prev}>&#10094;</a>
           </div>
-          <div className="col-lg-6">
+          <div className="col-sm-6">
             <p className={`review__description ${props.fade ? 'fade' : ''}`} onAnimationEnd={props.endAnimation}>
               {description}
             </p>
           </div>
-          <div className="col-lg-1 col--centervertical">
+          <div className="col-sm-1 col--centervertical mr-auto">
             <a className="carousel__btn" style={{color: "#613476"}} onClick={props.next}>&#10095;</a>
           </div>
         </div>
