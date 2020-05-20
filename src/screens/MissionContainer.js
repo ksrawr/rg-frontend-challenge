@@ -1,7 +1,6 @@
 import React from 'react';
-// import './MissionContainer.css';
-
 import MissionContent from './../components/MissionContent/MissionContent';
+import MissionSvg from './../images/img-1.jpg';
 
 const MissionContainer = () => {
   return (
@@ -16,7 +15,7 @@ const MissionContainer = () => {
 
         {/* Mission Image */}
         <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 col-xs-12 mt-2 mission__message">
-          <img src="./../images/img-1.jpg" className="img-fluid"></img>
+          <img src={MissionSvg} className="img-fluid"></img>
         </div>
 
       </div>

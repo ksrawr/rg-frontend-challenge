@@ -1,4 +1,6 @@
 import React from 'react';
+import InstagramSvg from './../images/instagram.svg';
+import FacebookSvg from './../images/facebook.svg';
 
 const FooterContainer = () => {
   return (
@@ -9,8 +11,8 @@ const FooterContainer = () => {
             <div className="text-center">
               <p className="social__text">Follow Us:</p>
               <div className="row row--centerhorizontal">
-                <img className="social__icon" src="./../images/instagram.svg"/>
-                <img className="social__icon" src="./../images/facebook.svg"/>
+                <img className="social__icon" src={InstagramSvg}/>
+                <img className="social__icon" src={FacebookSvg}/>
               </div>
             </div>
           </div>
